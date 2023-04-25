@@ -1,5 +1,9 @@
 # calc fibonacci series up to n
 def fib(n):
+    if n < 0:
+        print("n must be greater than 0")
+        return
+    
     a, b = 0, 1
     while a < n:
         print(a, end=' ')
