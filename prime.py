@@ -1,4 +1,7 @@
 def is_prime(n):
+    if n < 0:
+        print("n must be greater than 0")
+        return False
     if n < 2:
         return False
     for i in range(2, n // 2 + 1):
